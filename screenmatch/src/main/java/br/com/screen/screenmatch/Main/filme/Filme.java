@@ -17,11 +17,11 @@ public class Filme {
 	private Integer anoLancamento;
 	private String genero;
 
-	public Filme(DadosCadastroFilme filme) {
-		this.nome = filme.nome();
-		this.duracaoEmMinutos = filme.duracao();
-		this.anoLancamento = filme.ano();
-		this.genero = filme.genero();
+	public Filme(DadosCadastroFilme dados) {
+		this.nome = dados.nome();
+		this.duracaoEmMinutos = dados.duracao();
+		this.anoLancamento = dados.ano();
+		this.genero = dados.genero();
 	}
 	
 	public Filme() {}
