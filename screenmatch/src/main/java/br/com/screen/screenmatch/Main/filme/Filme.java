@@ -75,4 +75,11 @@ public class Filme {
 		this.genero = genero;
 	}
 
+	public void atualizaDados(DadosEditaFilme dados) {
+		this.nome = dados.nome();
+		this.duracaoEmMinutos = dados.duracao();
+		this.anoLancamento = dados.ano();
+		this.genero = dados.genero();
+	}
+
 }
